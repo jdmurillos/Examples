@@ -1,0 +1,6 @@
+Hola, estoy aprendiendo Python.
+En un lugar de la ciudad
+de cuyo nombre no quiero nombrar
+pero aquÃ­ vamos
+Python es genial.Nueva línea en el fichero
+Nueva línea en el fichero
