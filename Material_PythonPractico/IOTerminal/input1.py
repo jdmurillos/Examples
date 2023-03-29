@@ -1,5 +1,0 @@
-print("Introduzca su nombre:")
-nombre = input()
-print("Introduzca sus apellidos:")
-apellidos = input()
-print("Hola",nombre,apellidos)
