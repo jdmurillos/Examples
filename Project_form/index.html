@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Project free form" content="Project free form student">
+    <meta name="keywords" content="Free Form">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+  
+    <h1 id="title">Free Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    
+      <fieldset>
+        <label id="name-label" for="name">Enter Your First and last Name: <input id="name" type="text" name="name" placeholder="Name"required/>
+        </label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" type="email" pattern="[a-z0-5]{8,}" placeholder="email@correo.com" name="email"required/></label>
+        <label id="number-label" for="number">Input your age (years): <input type="number"  id="number" min="14" max="120" placeholder="14" name="number-years"/></label>
+      </fieldset>
+
+      <fieldset>
+
+        <label for="dropdown">Which option best describes your current role?
+       <select id="dropdown" name="referrer">
+
+          <option value="">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+          </select>
+        </label>
+</fieldset>
+<fieldset>Would you recommend this Free Survey Form to a friend?
+        <label for="def">
+          <input type="radio" id="def" name="recommend" class="inline" value="radius-maybe"/> Maybe
+        </label> 
+        <label for="maybe">
+          <input type="radio" id="maybe" name="recommend"class="inline" value="radius-definitely"/> Definitely
+        </label>
+        <label for="not-sure">
+          <input type="radio" id="not-sure" name="recommend" class="inline" value="radius-notsure"/>Not sure
+        </label>
+</fieldset>
+<fieldset>What would you like to see improved? (Check all that apply)
+        <label for="improve-front"> 
+          <input id="improve-front" type="checkbox" value="improve-front" name="improve-front"class="inline"/> Front-end Projects
+        </label>
+      
+        <label for="improve-back">
+          <input id="improve-back" type="checkbox" value="back-end" name="improve-back"class="inline"/> Back-end Projects
+        </label>
+
+        <label for="improve-data"><input id="improve-data" type="checkbox" value="improve-data" name="improve-data"class="inline"/> Data Visualization</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="bio">
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+  <input type="submit" value="Submit" id="submit"/>
+    </form>
+
+  </body>
+
+</html>
